@@ -6,8 +6,7 @@ Escolhi o modelo ARIMAE porque estou estudando em matemática e poderia ser uma 
 Usei também o Propeth que é simples de usar.
 
 
-![Diagrama UML da arquitetura](Docker\xrp-previsao\docs\img\mermaid-diagram.png)
-
+![Diagrama UML da arquitetura](docs/img/mermaid-diagram.png)
 
 
 ![Série histórica do XRP/BRL](docs/img/serie_historica.png)
