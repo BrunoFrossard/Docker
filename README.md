@@ -6,10 +6,10 @@ Escolhi o modelo ARIMAE porque estou estudando em matemática e poderia ser uma 
 Usei também o Propeth que é simples de usar.
 
 
-![Diagrama UML da arquitetura](docs/img/mermaid-diagram.png)
+![Diagrama UML da arquitetura](xrp-previsao/docs/img/mermaid-diagram.png)
 
 
-![Série histórica do XRP/BRL](docs/img/serie_historica.png)
+![Série histórica do XRP/BRL](xrp-previsao/docs/img/serie_historica.png)
 
 ### Etapa 4 — Transformar o preço e testar a estacionariedade
 
@@ -34,11 +34,11 @@ Todos ficaram com AIC muito parecido mas o melhor foi o ARIMA(0,1,0), que esse 1
 Na primeira tentativa o Prophet errou muito e previu uma alta em dezembro de 2025 que não aconteceu. O motivo foi que ele aprendeu a grande alta que houve em novembro e dezembro de um dos anos como se fosse algo que se repete todo ano. Mas isso era fácil de se resolver, só tirando a sazonalidade. 
 
 
-![Métricas obtidas no treinamento](docs/img/metricas.png)
+![Métricas obtidas no treinamento](xrp-previsao/docs/img/metricas.png)
 
 Mais uma demonstração do porquê usei o ARIMA. Mesmo repetindo o último preço, ele errou menos que o Prophet.
 
-![Comparação das previsões com os valores reais](docs/img/comparacao_teste.png)
+![Comparação das previsões com os valores reais](xrp-previsao/docs/img/comparacao_teste.png)
 
 Depois retreinei o ARIMA com todos os dados, para a previsão partir do último dia disponível.
 
@@ -63,7 +63,7 @@ Nós temos 2 rotas, uma confirma que o serviço está no ar e qual modelo foi ca
 - Intervalo de 95%: como o ARIMA(0,1,0) devolve sempre o mesmo preço, a resposta parecia um bug.
 
 
-![Respostas reais de saúde e predição do backend](docs/img/predicao_backend.png)
+![Respostas reais de saúde e predição do backend](xrp-previsao/docs/img/predicao_backend.png)
 
 As imagens de métricas e de respostas do backend foram geradas a partir dos resultados registrados nesta execução. 
 
