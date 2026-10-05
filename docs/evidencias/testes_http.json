@@ -1,0 +1,74 @@
+﻿[
+    {
+        "instante":  "2026-10-05T15:52:48.8938190-03:00",
+        "metodo":  "GET",
+        "url":  "http://localhost:8000/health",
+        "status_http":  200,
+        "esperado":  200,
+        "corpo":  {
+                      "status":  "ok",
+                      "modelo":  "arima",
+                      "ultima_data_treino":  "2026-01-02"
+                  }
+    },
+    {
+        "instante":  "2026-10-05T15:52:48.9315346-03:00",
+        "metodo":  "GET",
+        "url":  "http://localhost:8000/predict?data=2026-01-03",
+        "status_http":  200,
+        "esperado":  200,
+        "corpo":  {
+                      "data":  "2026-01-03",
+                      "preco_previsto_brl":  10.92,
+                      "intervalo_95_brl":  [
+                                               10.0722,
+                                               11.8391
+                                           ],
+                      "modelo":  "arima",
+                      "aviso":  "Predição experimental, não é recomendação de investimento."
+                  }
+    },
+    {
+        "instante":  "2026-10-05T15:52:48.9561353-03:00",
+        "metodo":  "GET",
+        "url":  "http://localhost:8000/predict?data=2026-01-02",
+        "status_http":  400,
+        "esperado":  400,
+        "corpo":  {
+                      "detail":  "A data deve ser posterior a 2026-01-02."
+                  }
+    },
+    {
+        "instante":  "2026-10-05T15:52:48.9727111-03:00",
+        "metodo":  "GET",
+        "url":  "http://localhost:8000/predict?data=2026-10-15",
+        "status_http":  400,
+        "esperado":  400,
+        "corpo":  {
+                      "detail":  "Horizonte máximo de 90 dias após o fim do treino."
+                  }
+    },
+    {
+        "instante":  "2026-10-05T15:52:48.9993747-03:00",
+        "metodo":  "GET",
+        "url":  "http://localhost:8000/predict?data=invalida",
+        "status_http":  422,
+        "esperado":  422,
+        "corpo":  {
+                      "detail":  [
+                                     {
+                                         "type":  "date_from_datetime_parsing",
+                                         "loc":  [
+                                                     "query",
+                                                     "data"
+                                                 ],
+                                         "msg":  "Input should be a valid date or datetime, input is too short",
+                                         "input":  "invalida",
+                                         "ctx":  {
+                                                     "error":  "input is too short"
+                                                 }
+                                     }
+                                 ]
+                  }
+    }
+]

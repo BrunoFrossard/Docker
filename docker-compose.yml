@@ -1,9 +1,20 @@
 services:
+  # Container de treino: roda uma vez e grava o artefato em ./models
+  # Uso: docker compose run --rm --build treino
+  treino:
+    build: ./training
+    profiles: ["treino"]
+    volumes:
+      - ./data:/app/data:ro
+      - ./models:/app/models
+      - ./docs/img:/app/img
+
+  # Container de inferência: lê o artefato de ./models (somente leitura)
+  # Uso: docker compose up --build
   inferencia:
     build: ./backend
     container_name: xrp-inferencia
     ports:
       - "8000:8000"
     volumes:
-      # Pasta gerada pelo notebook, montada somente leitura no container
       - ./models:/app/models:ro

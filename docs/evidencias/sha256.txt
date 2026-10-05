@@ -1,0 +1,16 @@
+﻿
+
+Algorithm : SHA256
+Hash      : 32E02F9279173B74A31166365B48009430D9E891209438A349F8193BCF1A01BA
+Path      : C:\Users\Inteli\Downloads\xrp-previsao (1)\xrp-previsao\models\arima.pkl
+
+Algorithm : SHA256
+Hash      : EB3C6040106E16F4F8D10F505B504D9CED76C4042DF63B5E3AAF13E8CF5D4DF0
+Path      : C:\Users\Inteli\Downloads\xrp-previsao (1)\xrp-previsao\models\metadata.json
+
+Algorithm : SHA256
+Hash      : 0A04BB2DD938F1855350B921841AB13DC27668A530D86B8EBD201E1A2DD10876
+Path      : C:\Users\Inteli\Downloads\xrp-previsao (1)\xrp-previsao\data\xrp_brl_mercadobitcoin.csv
+
+
+

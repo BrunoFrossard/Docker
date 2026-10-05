@@ -1,0 +1,2 @@
+﻿NAME             IMAGE                     COMMAND                  SERVICE      CREATED          STATUS          PORTS
+xrp-inferencia   xrp-previsao-inferencia   "uvicorn app:app --h…"   inferencia   43 seconds ago   Up 42 seconds   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp

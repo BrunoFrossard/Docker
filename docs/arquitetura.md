@@ -1,12 +1,12 @@
 # Arquitetura
 
-Diagrama de sequência UML com os componentes e a troca de dados. O artefato sai do notebook para a pasta `models/` do projeto, e o `docker-compose.yml` monta essa pasta no container de inferência em `/app/models` (somente leitura). O modelo não é copiado para dentro da imagem: para trocar de modelo basta retreinar e reiniciar o container.
+Diagrama de sequência UML com os componentes e a troca de dados. O artefato sai do container de treino para a pasta `models/` do projeto, e o `docker-compose.yml` monta essa pasta no container de inferência em `/app/models` (somente leitura). O modelo não é copiado para dentro da imagem: para trocar de modelo basta retreinar e reiniciar o container.
 
 ```mermaid
 sequenceDiagram
-    box Ambiente de treinamento (VS Code + Jupyter)
+    box Container de treinamento (Docker)
         participant CSV as CSV XRP/BRL
-        participant NB as Notebook de treinamento
+        participant NB as Script de treino (treino.py)
     end
     participant ART as Artefato (./models)
     box Container de inferência (Docker)

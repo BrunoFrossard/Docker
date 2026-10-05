@@ -1,0 +1,9 @@
+﻿xrp-inferencia  | INFO:     Started server process [1]
+xrp-inferencia  | INFO:     Waiting for application startup.
+xrp-inferencia  | INFO:     Application startup complete.
+xrp-inferencia  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+xrp-inferencia  | INFO:     172.18.0.1:35478 - "GET /health HTTP/1.1" 200 OK
+xrp-inferencia  | INFO:     172.18.0.1:35478 - "GET /predict?data=2026-01-03 HTTP/1.1" 200 OK
+xrp-inferencia  | INFO:     172.18.0.1:35478 - "GET /predict?data=2026-01-02 HTTP/1.1" 400 Bad Request
+xrp-inferencia  | INFO:     172.18.0.1:35478 - "GET /predict?data=2026-10-15 HTTP/1.1" 400 Bad Request
+xrp-inferencia  | INFO:     172.18.0.1:35478 - "GET /predict?data=invalida HTTP/1.1" 422 Unprocessable Entity
