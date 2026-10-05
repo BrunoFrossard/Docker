@@ -1,8 +1,8 @@
 ﻿[
     {
-        "instante":  "2026-10-05T15:52:48.8938190-03:00",
+        "instante":  "2026-10-05T17:20:28.4885023-03:00",
         "metodo":  "GET",
-        "url":  "http://localhost:8000/health",
+        "url":  "http://127.0.0.1:18000/health",
         "status_http":  200,
         "esperado":  200,
         "corpo":  {
@@ -12,9 +12,9 @@
                   }
     },
     {
-        "instante":  "2026-10-05T15:52:48.9315346-03:00",
+        "instante":  "2026-10-05T17:20:28.5211729-03:00",
         "metodo":  "GET",
-        "url":  "http://localhost:8000/predict?data=2026-01-03",
+        "url":  "http://127.0.0.1:18000/predict?data=2026-01-03",
         "status_http":  200,
         "esperado":  200,
         "corpo":  {
@@ -29,9 +29,9 @@
                   }
     },
     {
-        "instante":  "2026-10-05T15:52:48.9561353-03:00",
+        "instante":  "2026-10-05T17:20:28.5410724-03:00",
         "metodo":  "GET",
-        "url":  "http://localhost:8000/predict?data=2026-01-02",
+        "url":  "http://127.0.0.1:18000/predict?data=2026-01-02",
         "status_http":  400,
         "esperado":  400,
         "corpo":  {
@@ -39,9 +39,9 @@
                   }
     },
     {
-        "instante":  "2026-10-05T15:52:48.9727111-03:00",
+        "instante":  "2026-10-05T17:20:28.5546534-03:00",
         "metodo":  "GET",
-        "url":  "http://localhost:8000/predict?data=2026-10-15",
+        "url":  "http://127.0.0.1:18000/predict?data=2026-10-15",
         "status_http":  400,
         "esperado":  400,
         "corpo":  {
@@ -49,9 +49,9 @@
                   }
     },
     {
-        "instante":  "2026-10-05T15:52:48.9993747-03:00",
+        "instante":  "2026-10-05T17:20:28.5700352-03:00",
         "metodo":  "GET",
-        "url":  "http://localhost:8000/predict?data=invalida",
+        "url":  "http://127.0.0.1:18000/predict?data=invalida",
         "status_http":  422,
         "esperado":  422,
         "corpo":  {
