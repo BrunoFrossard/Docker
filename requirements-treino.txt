@@ -1,0 +1,8 @@
+# Mesmas versões do backend, para o artefato carregar sem erro de versão
+pandas==2.2.3
+numpy==1.26.4
+statsmodels==0.14.4
+prophet==1.1.6
+cmdstanpy==1.2.5
+matplotlib==3.9.2
+ipykernel==6.29.5

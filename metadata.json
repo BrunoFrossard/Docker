@@ -1,0 +1,21 @@
+{
+  "modelo": "arima",
+  "ordem_arima": [
+    0,
+    1,
+    0
+  ],
+  "escala": "log do preço de fechamento",
+  "ultima_data_treino": "2026-01-02",
+  "dias_teste": 30,
+  "metricas_teste_brl": {
+    "arima": {
+      "MAE": 1.0123333333333329,
+      "RMSE": 1.089138803520163
+    },
+    "prophet": {
+      "MAE": 3.317273396061593,
+      "RMSE": 3.3415615506477407
+    }
+  }
+}

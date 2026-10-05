@@ -1,0 +1,9 @@
+services:
+  inferencia:
+    build: ./backend
+    container_name: xrp-inferencia
+    ports:
+      - "8000:8000"
+    volumes:
+      # Pasta gerada pelo notebook, montada somente leitura no container
+      - ./models:/app/models:ro
